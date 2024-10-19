@@ -103,12 +103,11 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
 <ProjectImageBlock
     image={{
-        src: "images/projects/template/post/1200x800.png",
+        src: "images/projects/template/beautyspace_post/img3.png",
         alt: "Every image requires alt text. This should describe the content of that image."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Hình ảnh tổng quan về các tính năng nổi bật trong ứng dụng làm đẹp trên điện thoại. " 
     }
     width={6}
     maxHeight={"400px"}
@@ -120,11 +119,11 @@ dùng có xu hướng đầu tư nhiều hơn và chăm sóc
 bản thân và làm đẹp. Giúp nâng cao sự tự tin và
 thể hiện được phong cách sống của bản thân.
 
-Vấn đề hiện tại là mặc dù thị trường có nhiều sản
-phẩm làm đẹp, nhưng lại thiếu thông tin minh
-bạch về thành phần và nguồn gốc xuất xứ của các
-sản phẩm và khó khăn trong việc so sánh các sản
-phẩm với nhau có phù hợp với bản thân không .
+Vấn đề hiện tại là người dùng đang loay hoay tìm ra các lộ trình làm đẹp áp dụng 
+riêng cho bản thân và việc thử nghiệm các sản phẩm tốn rất nhiều thời gian và 
+tiền bạc. Sản phẩm làm đẹp trôi nổi trên thị trường rất nhiều nhưng lại thiếu 
+thông tin minh bạch về thành phần và nguồn gốc xuất xứ của các sản phẩm và khó
+ khăn trong việc so sánh các sản phẩm với nhau có phù hợp với bản thân không .
 
 Để giải quyết vấn đề này, ứng dụng làm đẹp cung cấp thông tin cụ thể về
 sản phẩm tích hợp các tiêu chuẩn và chứng nhận. Cung cấp công cụ so sánh sản
@@ -202,93 +201,99 @@ và đồng thời bảo vệ môi trường.
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+Chúng tôi đã tập trung vào sáu nhiệm vụ khi tạo ra thiết kế của mình.
+1. Nhiệm vụ thiết lập mục tiêu làm đẹp
+2. Nhiệm vụ nhận thông báo nhắc nhở về quy trình làm đẹp
+3. Nhiệm vụ động lực từ cộng đồng làm đẹp
+4. Nhiệm vụ theo dõi tiến trình làm đẹp hằng ngày
+5. Nhiệm vụ phân tích và đề xuất thay đổi quy trình làm đẹp
+6. Nhiệm vụ theo dõi tuổi thọ sản phẩm làm đẹp
 
-### Title for an Insight
+Cả sáu nhiệm vụ được chọn vì nhiệm vụ 1-5 gắn với mục tiêu thúc đẩy thói quen làm đẹp lành mạnh,
+trong khi nhiệm vụ 1 giúp thiết lập và đảm bảo tiến độ các mục tiêu cá nhân. Nhiệm vụ 2 nhắc nhở 
+người dùng về quy trình làm đẹp hàng ngày, nhiệm vụ 3 tạo động lực từ cộng đồng làm đẹp, 
+nhiệm vụ 4 theo dõi tiến trình làm đẹp hàng ngày, và nhiệm vụ 5 phân tích và đề xuất thay đổi quy trình làm đẹp. 
+Chúng tôi tin rằng tất cả các nhiệm vụ đều quan trọng để cải thiện trải nghiệm người dùng và hỗ trợ họ theo dõi, 
+cải thiện các thói quen làm đẹp một cách toàn diện và tiện lợi.
+
+Trong quy trình thiết kế ban đầu, chúng tôi đã phát triển ba ý tưởng: gương thông minh có tích hợp camera để theo dõi trực quan,
+thiết bị di động để ghi nhận và theo dõi các thông tin làm đẹp hàng ngày, và đồng hồ đeo tay nhằm cung cấp lời nhắc và theo dõi
+thói quen làm đẹp. Cuối cùng, chúng tôi kết hợp ưu điểm của cả ba thiết kế thành một giải pháp duy nhất—ứng dụng di động theo 
+dõi và phân tích quá trình làm đẹp. Ứng dụng này cho phép người dùng nhập nhanh các thói quen hàng ngày, cung cấp tính năng theo
+dõi chi tiết tiến trình, đồng thời thiết bị đeo hỗ trợ nhắc nhở và đưa ra gợi ý. Việc kết hợp các yếu tố này tạo ra một hệ thống
+tiện lợi, cá nhân hóa, giúp người dùng theo sát mục tiêu làm đẹp của mình.
+### Thiết kế trên gương thông minh
 
 <ProjectImageBlock
     image={{
-        src: "images/projects/template/post/1200x800.png",
+        src: "images/projects/template/beautyspace_post/img4.png",
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "Thiết kế gương thông minh mang đến sự tiện ích mới mẻ, kết nối người dùng với các xu hướng làm đẹp và chăm sóc bản thân một cách thông minh và hiện đại"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+Thiết kế ứng dụng trên gương thông minh sẽ tối ưu hóa trải nghiệm người dùng bằng cách tích hợp
+nhiều tính năng hữu ích. Người dùng có thể thao tác trực tiếp trên gương để mua các sản phẩm làm đẹp với nút
+“Mua ngay”, liên kết đến danh sách sản phẩm khuyến nghị dựa trên tình trạng da của họ. Gương cũng cho phép 
+người dùng lên lịch chăm sóc da hàng ngày hoặc theo tuần, với thông báo nhắc nhở trực tiếp trên gương, giúp 
+duy trì thói quen làm đẹp một cách đều đặn và khoa học.
+Ngoài ra, ứng dụng cho phép người dùng xem video hướng dẫn chăm sóc da ngay trên gương,mang đến sự tiện lợi 
+khi vừa theo dõi hướng dẫn vừa thực hiện các bước chăm sóc. Một tính năng đặc biệt khác là khả năng so sánh 
+tình trạng da qua các ngày với biểu đồ tiến triển được hiển thị rõ ràng, giúp người dùng theo dõi hiệu quả 
+của quá trình chăm sóc da theo thời gian. Thiết kế gương thông minh này không chỉ hiện đại mà còn mang tính 
+tương tác cao, giúp người dùng có thể quản lý quy trình làm đẹp một cách toàn diện, từ mua sắm sản phẩm đến 
+lên lịch và đánh giá kết quả chăm sóc da.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Thiết kế trên điện thoại thông minh
 
 <ProjectImageBlock
     image={{
-        src: "images/projects/template/post/1200x800.png",
+        src: "images/projects/template/beautyspace_post/img5.png",
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "Thiết kế ứng dụng làm đẹp trên điện thoại tập trung vào trải nghiệm trực quan và cá nhân hóa, giúp người dùng dễ dàng quản lý thói quen làm đẹp hàng ngày."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+Ứng dụng di động theo dõi và phân tích quá trình làm đẹp giúp người dùng quản lý và cải thiện thói quen làm đẹp hàng ngày. 
+Người dùng có thể nhanh chóng chụp ảnh thông qua camera, sau đó hệ thống sẽ tự động phân tích tình trạng da để nhận diện 
+các sản phẩm và phương pháp, từ đó cung cấp thông tin chi tiết. Tính năng theo dõi tiến trình cung cấp cho người dùng cái 
+nhìn tổng quát về sự tiến bộ của họ. Bên cạnh đó, ứng dụng cũng tích hợp phân tích thông minh, đưa ra gợi ý cá nhân hóa dựa 
+trên dữ liệu người dùng để điều chỉnh quy trình làm đẹp hiệu quả hơn. Ngoài ra, ứng dụng cũng có thể cài đặt thông báo lời 
+nhắc để duy trì thói quen làm đẹp và tạo động lực cho người dùng. Tính năng tương tác với cộng đồng khuyến khích chia sẻ và 
+học hỏi, nâng cao trải nghiệm cá nhân trong hành trình làm đẹp.
 
 </ProjectImageBlock>
 
-### Title for an Insight
-
+### Thiết kế trên đồng hồ đeo tay
 <ProjectImageBlock
     image={{
-        src: "images/projects/template/post/1200x800.png",
+        src: "images/projects/template/beautyspace_post/img6.jpg",
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "Thiết kế ứng dụng làm đẹp trên đồng hồ đeo tay đem đến sự tiện lợi với các nhắc nhở và gợi ý chăm sóc da thông minh."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+Thiết kế ứng dụng làm đẹp trên đồng hồ đeo tay tập trung vào việc tối giản giao diện và mang đến trải nghiệm 
+trực quan cho người dùng. Các tính năng quan trọng như nhắc nhở chăm sóc da, theo dõi thói quen làm đẹp, và 
+gợi ý từ chuyên gia đều được hiển thị thông qua biểu tượng đơn giản và dễ nhận biết. Đồng hồ có thể gửi thông 
+báo thời gian thực về  dùng kem chống nắng, hay các nhắc nhở cá nhân hóa khác. Ngoài ra, ứng dụng cho phép đồng 
+bộ dữ liệu với điện thoại, giúp người dùng theo dõi và điều chỉnh thói quen hàng ngày. Với khả năng kết nối cùng 
+các thiết bị làm đẹp khác, ứng dụng trên đồng hồ không chỉ tạo sự tiện lợi mà còn hỗ trợ việc chăm sóc sắc đẹp một 
+cách toàn diện và thông minh.
 
 </ProjectImageBlock>
 
@@ -296,68 +301,55 @@ adipiscing diam donec adipiscing.
 
 <ProjectImagesBlock
     images={[
-        {
-            src: "images/projects/template/post/300x600.png",
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: "images/projects/template/post/300x600.png",
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
+        
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block spans the set of images."
+        ""
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+Thiết kế cuối cùng của BeautySpace là một siêu ứng dụng của tương lai với những tính năng ưu việt. 
+Ứng dụng cho phép theo dõi dễ dàng việc sử dụng các sản phẩm chăm sóc da và lịch sử làm đẹp của bạn 
+Chỉ cần đứng trước camera, bạn sẽ có thể quét và phân tích làn da của mình bằng camera trên gương. 
+Thông tin về các sản phẩm chăm sóc da và quy trình làm đẹp bền vững có thể dễ dàng truy cập thông 
+qua gương, nhằm khuyến khích tiêu dùng mỹ phẩm có hiểu biết.Bạn còn có thể liên hệ với những chuyên 
+gia làm đẹp hàng đầu để được tư vấn và đưa ra những lộ trình phù hợp với tình trạng bản thân. Tất cả 
+tính năng này hoạt động cùng nhau để hỗ trợ quản lý quy trình làm đẹp, đồng thời khuyến khích loại bỏ 
+những sản phẩm ít dùng, không phù hợp với nhu cầu chăm sóc da hiện tại của bạn.
 
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: "images/projects/template/post/600x300.png",
+            src: "images/projects/template/beautyspace_post/img9.jpg",
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
+            caption: "Bạn có thể kiểm tra tình trạng mình thông qua camera của điện thoại và lựa chọn sản phẩm gợi ý"
         },
         {
-            src: "images/projects/template/post/600x300.png",
+            src: "images/projects/template/beautyspace_post/img10.jpg",
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
+            caption: "Bạn có thể đặt lịch hẹn với các chuyên gia mà bạn tin tưởng từ những thông tin ứng dụng cung cấp."
         },
     ]}
     direction={"column"}
     width={6}
     maxHeight={"200px"}
 >
+### Task 1: Quét và phân tích khuôn mặt người dùng
+Ứng dụng trong hình sử dụng chức năng chụp ảnh để quét và phân tích khuôn mặt người dùng, từ đó xác định các vấn đề về da như quầng thâm,
+tàn nhang, mụn đầu đen, và mụn trứng cá. Sau khi quá trình phân tích hoàn tất, ứng dụng sẽ hiển thị kết quả cụ thể về tình trạng da của 
+người dùng. Dựa trên phân tích này, ứng dụng có thể đề xuất các sản phẩm chăm sóc da phù hợp, giúp người dùng giải quyết những vấn đề đã 
+phát hiện. Người dùng cũng có tùy chọn quét lại nếu muốn thực hiện phân tích thêm hoặc xem thông tin chi tiết về các sản phẩm và tình 
+trạng da.
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+### Task 2: Đặt lịch hẹn với chuyên gia làm đẹp
+Ứng dụng cung cấp chức năng đặt lịch hẹn với chuyên gia làm đẹp, giúp người dùng dễ dàng kết nối và nhận tư vấn cá nhân hóa. Sau khi chọn 
+chức năng đặt lịch, người dùng có thể xem danh sách các chuyên gia làm đẹp với thông tin chi tiết như chuyên môn, kinh nghiệm, và thời 
+gian làm việc. Người dùng có thể chọn chuyên gia phù hợp và đặt lịch hẹn trực tiếp qua ứng dụng, với tùy chọn chọn ngày giờ thuận tiện 
+cho mình.
 
 </ProjectImagesBlock>
